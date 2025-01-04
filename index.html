@@ -7,7 +7,6 @@
     <title>Ethical Dilemmas in India's Education System</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js" defer></script>
-    <script src="js/index.js" defer></script>
 </head>
 
 <body>
@@ -360,12 +359,19 @@
             </li>
         </ol>
 
-        <section id="comments">
+         <section id="comments">
             <h3>Comments</h3>
-            <script src="https://utteranc.es/client.js"
-                repo="ramakamble1997/ethical-issues-with-indian-education-system-221220241701" issue-term="title"
-                theme="github-dark" crossorigin="anonymous" async>
-                </script>
+            <div id="comment-form">
+                <textarea id="comment-input" placeholder="Write your comment here..."></textarea>
+                <button id="submit-comment" disabled>Post Comment</button>
+            </div>
+            <div id="login-section">
+                <button id="login-btn">Login with Google</button>
+                <button id="logout-btn" style="display: none;">Logout</button>
+            </div>
+            <div id="comment-list">
+                <!-- Comments will be dynamically added here -->
+            </div>
         </section>
     </main>
     <footer>
