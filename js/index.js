@@ -89,7 +89,7 @@ submitComment.addEventListener("click", async () => {
         addNewCommentToPage({
             name: user.displayName,
             avatar: user.photoURL,
-            timestamp: serverTimestamp(),
+            timestamp: new Date().toLocaleString(),
             comment,
         }); // Add the new comment to the page
     } catch (error) {
