@@ -115,7 +115,6 @@ const fetchComments = async (limit = 50) => {
 
 // Add New Comment to Page
 const addNewCommentToPage = (data) => {
-    console.log(data);
     const commentEl = document.createElement("div");
     commentEl.classList.add("comment");
 
